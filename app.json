@@ -1,0 +1,22 @@
+{
+    "name": "Account Checker Bot",
+    "description": "Checks Accounts and send results as telegram message",
+    "keywords": [
+        "Account-Checker",
+        "python",
+        "telegram",
+        "telegram-bot",
+        "Exploit"
+    ],
+    "repository": "https://github.com/akashrchandran/Account_checkbot/",
+    "success_url": "/",
+    "env": {
+    },
+    "formation": {
+        "worker": {
+            "quantity": 1,
+            "size": "free"
+        }
+    },
+    "image": "heroku/python"
+}
