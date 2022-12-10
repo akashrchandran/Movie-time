@@ -24,7 +24,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '(oa-8#^doldp=mq_^qr8roc+yl*c((dt$=tzxl(c=k33ni*6q@'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['movie-time-gvtv.onrender.com']
 
