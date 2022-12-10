@@ -2,7 +2,7 @@
 """Django's command-line utility for administrative tasks."""
 import os
 import sys
-
+from django.core.wsgi import get_wsgi_application
 
 def main():
     os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'FinalProject.settings')
@@ -17,6 +17,6 @@ def main():
     execute_from_command_line(sys.argv)
     current_path = os.path.dirname(os.path.abspath(__file__))
     sys.path.append(os.path.join(current_path, "FinalProject"))
-
+    application = get_wsgi_application()
 if __name__ == '__main__':
     main()
