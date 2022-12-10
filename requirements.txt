@@ -1,6 +1,5 @@
 ﻿django
+psycopg2==2.7.4 --no-binary psycopg2
 gunicorn
-django-heroku
 whitenoise
 Pillow
-mysqlclient
