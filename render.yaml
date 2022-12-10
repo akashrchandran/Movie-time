@@ -15,8 +15,3 @@ services:
       generateValue: true
     - key: DJANGO_SETTINGS_MODULE
       value: config.settings.production
-
-databases:
-- name: django-quick-start
-  databaseName: django
-  user: django
