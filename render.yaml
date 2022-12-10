@@ -14,4 +14,4 @@ services:
     - key: DJANGO_ADMIN_URL
       generateValue: true
     - key: DJANGO_SETTINGS_MODULE
-      value: FinalProject.settings.production
+      value: FinalProject.settings
