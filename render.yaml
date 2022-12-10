@@ -1,6 +1,6 @@
 services:
 - type: web
-  name: django-quick-start
+  name: movie-time
   env: python
   plan: starter
   buildCommand: ./build.sh
