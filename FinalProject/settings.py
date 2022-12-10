@@ -26,7 +26,7 @@ SECRET_KEY = '(oa-8#^doldp=mq_^qr8roc+yl*c((dt$=tzxl(c=k33ni*6q@'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['watchmoviesnow.herokuapp.com']
+ALLOWED_HOSTS = ['movie-time-gvtv.onrender.com']
 
 
 # Application definition
