@@ -7,6 +7,10 @@ services:
   startCommand: gunicorn FinalProject.wsgi:application
   autoDeploy: false
   envVars:
+    - key: DATABASE_URL
+        fromDatabase:
+          name: movietime
+          property: connectionString
     - key: WEB_CONCURRENCY
       value: 4
     - key: DJANGO_SECRET_KEY
