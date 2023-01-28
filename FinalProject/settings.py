@@ -27,7 +27,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY', default='ejdnj3e32y4732newf34u9f')
 DEBUG = True
 
 ALLOWED_HOSTS = ["movieztime.tk","127.0.0.1:8000"]
-
+CSRF_TRUSTED_ORIGINS = ['https://*.movieztime.tk']
 
 # Application definition
 
