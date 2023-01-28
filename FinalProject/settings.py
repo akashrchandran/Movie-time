@@ -26,11 +26,9 @@ SECRET_KEY = os.environ.get('SECRET_KEY', default='ejdnj3e32y4732newf34u9f')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["movieztime.tk"]
+ALLOWED_HOSTS = ["movieztime.tk","127.0.0.1:8000"]
 
-RENDER_EXTERNAL_HOSTNAME = os.environ.get('RENDER_EXTERNAL_HOSTNAME')
-if RENDER_EXTERNAL_HOSTNAME:    
-    ALLOWED_HOSTS.append(RENDER_EXTERNAL_HOSTNAME)
+
 # Application definition
 
 INSTALLED_APPS = [
@@ -81,8 +79,8 @@ WSGI_APPLICATION = 'FinalProject.wsgi.application'
 DATABASES = {
     'default': dj_database_url.config(
         # Feel free to alter this value to suit your needs.
-        default='postgresql://postgres:postgres@localhost:5432/mysite',
-        conn_max_age=600
+        default=os.getenv("DATABASE_URL"),
+        conn_max_age=1800
     )
 }
 
